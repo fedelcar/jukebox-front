@@ -1,0 +1,8 @@
+.container-fluid
+  h1 Wolox Jukebox
+  = form_tag("https://wolox-jukebox.herokuapp.com/store", method: "post") do
+    = label_tag(:text, "Tema o Artista:")
+    = text_field_tag(:text)
+    = submit_tag("Agregar")
+  #response
+
